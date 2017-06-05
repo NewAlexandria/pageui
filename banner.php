@@ -1,0 +1,1 @@
+<div class="banner">	<div id="notify">		<?php  require_once('notify.php');  ?>	</div>	<div id="feedback_cel">		<?php  require_once('feedback.php');  ?>	</div>	<div class="above_targetting"></div>	<div class="below_targetting"></div></div>

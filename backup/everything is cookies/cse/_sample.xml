@@ -1,0 +1,40 @@
+<GoogleCustomizations>
+
+  <CustomSearchEngine>
+   <!--For brevity, other elements have been excluded....--> 
+   
+    <Context>
+      <BackgroundLabels>
+        <Label name="_cse_solar_example" mode="FILTER"/>
+        <Label name="_cse_exclude_solar_example" mode="ELIMINATE"/>
+      </BackgroundLabels>
+
+    </Context>
+  </CustomSearchEngine>
+  
+
+ <Annotations>
+
+    <Annotation about="www.cancer.gov/cancertopics/types/liver/*">
+      <Label name="_cse_Ansi-stoubiq"/>
+      <Comment>government site</Comment>
+    </Annotation>
+
+    <Annotation about="www.medicinenet.com/liver_cancer/">
+      <Label name="_cse_exclude_Ansi-stoubiq"/>
+      <Comment>site on symptoms</Comment>
+    </Annotation>
+
+    <Annotation about="www.webmd.com/hw/cancer/*">
+      <Label name="_cse_exclude_Ansi-stoubiq"/>
+      <Comment>great sites for patients!</Comment>
+    </Annotation>
+
+    <Annotation about="www.oncologychannel.com/*/treatment">
+      <Label name="_cse_exclude_Ansi-stoubiq"/>
+    </Annotation>
+
+  </Annotations> 
+
+  
+</GoogleCustomizations>   

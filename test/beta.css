@@ -1,0 +1,324 @@
+
+
+
+
+/**************    Content    **************/
+
+#frame_content
+{
+	padding: 0px;
+	vertical-align: top;
+}
+
+.content_floater
+{
+	float: right;
+	border-width: 0 0 1px 1px;
+	border-color: #ccc;
+	border-style: solid;
+	padding: 4px 6px 4px 6px;
+	background-color: #FFF;
+}
+
+#links_groups {
+	border-bottom: 2px #ddd solid;
+	padding: 3px;
+	min-height: 400px;
+	font-size: 0.8em;
+}
+
+#links_flat_list
+{
+	border-bottom: 3px #ddd double;
+	padding: 3px;
+	font-size: 0.75em;
+	max-height: 700px;
+	overflow: auto;
+}
+
+
+#links_flat_list td
+{
+	max-width: 80%;
+	overflow: hidden;
+}
+
+
+.group_block
+{
+	border: 1px #F9EAA9 solid;
+	padding: 3px;
+	vertical-align: top;
+	background-color: #FEFCF0;
+}
+
+.group_block ul
+{
+	display: inline-block;
+	vertical-align: top;
+}
+
+.group_title
+{
+	border: 1px #FBFFDF solid;
+	padding: 3px 3px 3px 7px;
+	background-color: #DCFDC3;
+}
+
+
+.header-group td {
+	border-bottom: 1px #ddd double;
+	padding-left: 3px;
+}
+
+.header-group td A {
+	text-decoration: none;
+	color: #000;
+}
+
+.header-group td:hover
+{
+	background-color: #CCC;
+	
+}
+
+.sort-highlight {
+	background-color: #dfdfdf;
+}
+
+/**************    Header    **************/
+
+#frame_header
+{
+	height: 80px;
+	max-height: 80px;
+	border: 1px #ddd solid;
+}
+
+.brand
+{
+	display: inline-block;
+	background-color: #beb;
+	color: 000;
+	text-align: left;
+	min-width: 300px;
+	height: 70px;
+	padding: 0px;
+}
+
+.brand div {
+	padding: 6px;
+}
+
+.header
+{
+	padding: 3px;
+}
+
+.notify
+{
+	display: inline-block;
+	position: relative;
+	border: 1px #ddd solid;
+	height: 70px;
+	margin: 0 10px 0 10px;
+	color: #CCC;
+	font-size: 10pt;
+	min-width: 200px;
+}
+
+.notify_on
+{
+	position: relative;
+	border: 1px #600 solid;
+	margin: auto;
+	width: auto;
+	height: auto;
+}
+
+.notify_text
+{
+	margin: 7px;
+	font-weight: bold;
+	font-size: 12pt;
+	color: #C00;
+
+}
+
+.tips
+{
+	display: inline-block;
+	position: relative;
+	border: 1px #ddd solid;
+	height: 70px;
+}
+
+
+/**************    Login    **************/
+
+.login {
+}
+
+.login_cell
+{
+	background-color: #C9C6E1;
+	padding: auto;
+	text-align: center;
+	font-size: 10px;
+	line-height: 9px;
+	border: 1px #AAAFD7 double;
+}
+
+
+
+/**************    Search    **************/
+
+.search {
+	padding: 10px 10px 0 10px; 
+	font-size: 12px;
+}
+
+
+#search_cell
+{
+	font-size: 8pt;
+	color: #333;
+	text-align: center;
+}
+
+#search_string
+{
+	font-size: 8pt;
+	color: #333;
+}
+
+#search_submit
+{
+	font-size: 7pt;
+	color: #333;
+}
+
+
+/**************    Pages    **************/
+
+#frame_pages
+{
+	background-color: #eee;
+	width: 130px;
+	min-width: 130px;
+	vertical-align: top;
+}
+
+.pages
+{
+	padding: 0px 10px 10px 10px;
+	font-size: 12px;
+	min-height: 300px;
+	vertical-align: top;
+}
+
+.pages ul
+{
+	padding: 0px;
+	background-color: #eee
+}
+
+.pages ul li
+{
+	padding: 3px;
+}
+
+.menu_element_active
+{
+	padding: 2px;
+	background-color: #e8e8e8;
+}
+
+
+.pages ul li:hover
+{
+	border: 1px #ddd solid;
+	padding: 2px;
+	background-color: #e8e8e8;
+}
+
+.pages ul li a
+{
+	text-decoration: none;
+	color: #5F7F59;
+}
+
+#tools_UI {
+	padding: 0px 10px 10px 10px;
+	font-size: 12px;
+	min-height: 300px;
+	vertical-align: top;
+	margin: 20px 0 0 0;
+}
+
+#pages_submit {
+	font-size: 7pt;
+	color: #333;
+}
+
+#pages_name {
+	font-size: 8pt;
+	color: #333;
+}
+
+/**************    Banner    **************/
+
+#frame_banner
+{
+	background-color: #eeffee;
+	width: 200px;
+	min-width: 200px;
+	vertical-align: top;
+}
+
+.banner
+{
+	padding: 10px;
+}
+
+.above_targetting
+{
+	width: 200px;
+	height: 400px;
+	border: 1px #EEE solid;
+}
+	
+.below_targetting
+{
+	width: 200px;
+	height: 400px;
+	border: 1px #EEE solid;
+	margin: 4px 0 0 0;
+}
+	
+
+/**************    Footer    **************/
+
+
+.footer {
+	text-align: center;
+}
+
+.notify_d
+{
+	border: 2px red solid;
+	margin: 12px 2px 2px 2px;
+	padding: 5px;
+	text-align: left;
+}
+
+/**************    Link Dropper Bookmarklet   **************/
+
+
+#dropper_main
+{
+	margin: 7px;
+	padding: 4px;
+	border: 1px #333 solid;
+
+}

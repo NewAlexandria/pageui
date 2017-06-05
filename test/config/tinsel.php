@@ -1,0 +1,1 @@
+<?phpsession_start();/// SEC this really really really should have a confirmation UI, consisting of a form input for a text-key that is matched against a hash in their account (like how the maintain cookie is done with createKey).$_SESSION['DEBUG'] = 1;				?>

@@ -1,0 +1,1 @@
+<?php session_start ();if ( $_REQUEST['set'] ) {	$_SESSION['tut'] = $_REQUEST['set'];	header("Location: ".$_REQUEST['page']);	exit;} else {	header("Location: home.php");	exit;}?>
