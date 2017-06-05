@@ -1,0 +1,609 @@
+
+/**********************  DYNAMIC UI COMPONENTS **********************/
+
+
+#UI_holder
+{
+	position: absolute;
+}
+
+#links_UI
+{
+	position: absolute;
+	z-index: 1;
+	font-size: 10pt;
+	background-color: #FEFDF9;
+	border: 3px #DCD3A6 double;
+	padding: 5px 5px 0 5px;
+	min-width: 450px;
+}
+
+
+.link_UI_element
+{
+	float: right;
+	margin: 0 0 0 15px;
+}
+
+
+#groups_UI
+{
+	position: absolute;
+	top: 100px;
+	left: 100px;
+	z-index: 1;
+	font-size: 10pt;
+	background-color: #FEFDF9;
+	border: 3px #DCD3A6 double;
+	padding: 5px 5px 0 5px;
+	min-width: 390px;
+}
+
+
+.group_UI_element
+{
+	float: right;
+	margin: 0 0 0 15px;
+}
+
+
+.groups_update_UI {
+	font-size: 9px;
+	background-color: #e8e8e8;
+	color: #5F7F59;
+}
+
+
+
+/**************    Link Dropper Bookmarklet   **************/
+
+
+#dropper_main
+{
+	margin: 7px;
+	padding: 4px;
+	border: 1px #333 solid;
+	min-width: 370px;
+
+}
+
+/*
+#dropper_frame
+{
+	width: 90%;
+	height: 200px;
+	position: fixed;
+	top: 20px;
+	left: 5%;
+	z-index: 10000003;
+	visibility: visible;
+	display: block;
+	min-width: 398px;
+	background-color: #eee;
+	border: 3px #999 double;
+}
+
+*/
+
+
+/**************    High Level    **************/
+
+
+#left_col {
+	width: 130px;
+	max-width: 130px;
+}
+
+
+
+
+/**************    Content    **************/
+
+#frame_content
+{
+	padding: 0px;
+	vertical-align: top;
+	position: relative;
+}
+
+#frame_content_edit
+{
+	padding: 0px;
+	vertical-align: top;
+	position: relative;
+	border-width:  3px;
+	border-color: #EB8150;
+	border-style: solid;
+}
+
+#content_floater
+{
+	position: relative;
+	float: right;
+	top: 0;
+	right: 0px;
+	padding: 4px 6px 4px 6px;
+	background-color: #FFF;
+	text-align: right;
+	width: 60px;
+	border-width: 1px 0 1px 1px;
+	border-color: #E1A587;
+	border-style: solid;
+}
+
+#content_floater_edit
+{
+/*	position: absolute;*/
+/*	float: left;*/
+	z-index: 20;
+/*	top: 0;*/
+/*	right: 0px;*/
+	padding: 4px 6px 4px 6px;
+	background-color: #FFF;
+	text-align: right;
+	width: 115px;
+	border-width: 2px 0 2px 2px;
+	border-color: #EB8150;
+	border-style: solid;
+}
+
+#links_groups
+{
+	border-bottom: 2px #ddd solid;
+	padding: 3px;
+	min-height: 400px;
+	font-size: 0.8em;
+	margin: 0px 0 0 0;
+}
+
+#links_flat_list
+{
+	border-bottom: 3px #ddd double;
+	padding: 3px;
+	font-size: 0.75em;
+	max-height: 700px;
+	overflow: auto;
+}
+
+
+#links_flat_list td
+{
+	max-width: 80%;
+	overflow: hidden;
+}
+
+
+.group_block_t
+{
+	border: 1px #F9EAA9 solid;
+	padding: 3px;
+	vertical-align: top;
+	background-color: #FEFCF0;
+/*
+	float: left;
+	display: inline-block;
+*/
+	height: auto;
+	margin: 1px;
+}
+
+.link_col_t
+{
+	vertical-align: top;
+	display: table-cell;
+/*	float: left;*/
+	padding: 0 5px 0 5px;
+	min-width: 20px;
+	min-height: 50px;
+	margin: 0 3px 0 3px;
+}
+
+
+.group_set
+{
+	width: 100%;
+}
+
+.group_row
+{
+	min-height: 50px;
+	padding-left: 0px;
+	width: 100%;
+	display: table;
+	border-spacing: 3px 1px;
+}
+
+.group_row_new
+{
+	min-height: 10px;
+	border: 1px #fff solid;
+	padding-left: 0px;
+	
+}
+
+
+.group_block
+{
+	border: 1px #F9EAA9 solid;
+	padding: 3px;
+	vertical-align: top;
+	background-color: #FEFCF0;
+	display: table-cell;
+	height: auto;
+	margin: 1px;
+	width: auto;
+}
+
+.link_block
+{
+	display: table;
+	vertical-align: top;
+	width: auto;
+}
+
+
+.link_col
+{
+	display: table-cell;
+	width: auto;
+	margin: 0 3px 0 3px;
+	padding: 1px 2px 1px 2px;
+	min-width: 20px;
+	min-height: 50px;
+}
+
+
+.link
+{
+	white-space: nowrap;
+	margin: 1px;
+	padding: 1px 4px 1px 4px;
+	border: 1px #FBF8E8 solid;
+	background-color: #FEFDF9;
+}
+
+.link a
+{
+	text-decoration: none;
+	color: #333;
+}
+
+.link-look {
+	text-decoration: underline;
+	color: #00f;
+	cursor: pointer;
+}
+
+/*  testing edit UI */
+.tmenu
+{
+	background-color: #F4C08A;
+	color: #FFF;
+	/*	display: none;*/
+	font-size: 100%;
+	margin: 0 !important;
+	opacity: 0.95;
+	/*	padding: 0 0.3em 0 0.2em !important;*/
+	position: relative;
+	left: 0.1em;
+	top: -1.2em;
+	float: right;
+	border: 1px #5F3938 solid;
+	padding: 2px 2px 2px 2px;
+	line-height: 11px;
+}
+
+
+
+.group_title
+{
+	padding: 3px 3px 3px 7px;
+	background-color: #FFF;
+	border-top: 1px #E6EEAF solid;
+	border-right: 3px #E6EEAF double;
+	border-bottom: 1px #E6EEAF solid;
+	border-left: 3px #E6EEAF double;
+}
+
+
+.header-group td {
+	border-bottom: 1px #ddd double;
+	padding-left: 3px;
+}
+
+.header-group td A {
+	text-decoration: none;
+	color: #000;
+}
+
+.header-group td:hover
+{
+	background-color: #CCC;
+	
+}
+
+.sort-highlight {
+	background-color: #dfdfdf;
+}
+
+/********************    Header    *************************/
+
+#frame_header
+{
+	vertical-align: top;
+	width: 130px;
+	margin: 0px;
+}
+
+.brand
+{
+	background-color: #EAEBDA;
+	color: 000;
+	text-align: right;
+	padding: 3px;
+}
+
+.brand div {
+	padding: 6px;
+}
+
+.header
+{
+	padding: 0px;
+}
+
+.motto
+{
+	font-size: 10pt;
+	color: #330;
+}
+
+#notify
+{
+	display: inline-block;
+	position: relative;
+	border: 1px #ddd solid;
+	height: 70px;
+	margin: 0 10px 0 10px;
+	color: #CCC;
+	font-size: 10pt;
+	min-width: 200px;
+}
+
+.notify_on
+{
+	position: relative;
+	border: 1px #600 solid;
+	margin: auto;
+	width: auto;
+	height: auto;
+}
+
+.notify_text
+{
+	margin: 7px;
+	font-weight: bold;
+	font-size: 12pt;
+	color: #C00;
+	overflow: scroll;
+}
+
+#tips
+{
+	display: inline-block;
+	position: relative;
+	border: 1px #ddd solid;
+	height: 70px;
+}
+
+
+#bookmark_us
+{
+	margin: 6px 0 6px 0;
+	background-color: #fff;
+	font-size: 9pt;
+	text-align: center;
+	border: 1px #8BDC81 solid;
+	padding: 2px 0 2px 0;
+}
+
+#bookmark_us:hover
+{
+	border: 1px #5BDB38 solid;
+	background-color: #8BDC81;
+}
+
+/**************    Login    **************/
+
+#login {
+}
+
+.login_cell
+{
+	background-color: #D3DDE2;
+	padding: auto;
+	text-align: center;
+	font-size: 11px;
+	line-height: 9px;
+	border: 1px #E1E5EF double;
+	height: 14px;
+	padding-top: 3px;
+}
+
+.login_cell a { text-decoration: none; }
+.login_cell a:hover { text-decoration: underline; }
+
+
+/**************    Search    **************/
+
+.search
+{
+	margin: 10px 10px 0 10px;
+	font-size: 12px;
+}
+
+
+#search_cell
+{
+	font-size: 8pt;
+	color: #333;
+	text-align: center;
+	height: 40px;
+	max-height: 40px;
+/*	border: 1px #000 solid;*/
+}
+
+#q
+{
+	font-size: 8pt;
+}
+
+#search_string
+{
+	font-size: 8pt;
+	color: #333;
+}
+
+#search_submit
+{
+	font-size: 7pt;
+	color: #333;
+}
+
+
+/**************    Pages    **************/
+
+#frame_pages
+{
+	background-color: #F6F6F6;
+	vertical-align: top;
+	height: 200px;
+	border-width: 1px 1px 0 0;
+	border-color: #95AFCF;
+	border-style: solid;
+	text-align: center;
+	margin: 0px;
+}
+
+
+.pages
+{
+	font-size: 12px;
+/*	min-height: 300px;*/
+	vertical-align: top;
+	margin: 0 10px 10px 10px;
+	text-align: left;
+}
+
+.pages ul
+{
+	padding: 2px;
+	background-color: #F6F6F6
+}
+
+.pages ul li
+{
+	padding: 2px;
+	max-height: 33px;
+	text-indent: 0px;
+}
+
+.menu_element_active
+{
+	padding: 3px;
+	background-color: #eee;
+}
+
+
+.pages ul li:hover
+{
+	border: 1px #ddd solid;
+	padding: 1px;
+	background-color: #eee;
+}
+
+.pages ul li a
+{
+	text-decoration: none;
+	color: #5F7F59;
+}
+
+.pages_update_UI input {
+	font-size: 9px;
+	background-color: #e8e8e8;
+	color: #5F7F59;
+}
+
+#tools_UI
+{
+	/*	min-height: 300px;*/
+	vertical-align: top;
+	margin: 3px 0 0 0;
+	font-size: 12pt;
+	padding: 2px 4px 2px 7px;
+	font-weight: normal;
+	color: green;
+	background-color: #ddd;
+	border: 1px #eee solid;
+	width: 90%;
+	text-align: right;
+	text-decoration: none;
+}
+
+#pages_submit {
+	font-size: 7pt;
+	color: #333;
+}
+
+#pages_name {
+	font-size: 8pt;
+	color: #333;
+}
+
+/**************    Banner    **************/
+
+#frame_banner
+{
+	background-color: #eeffee;
+	width: 200px;
+	min-width: 200px;
+	vertical-align: top;
+}
+
+.banner
+{
+	padding: 10px;
+	vertical-align: top;
+}
+
+.above_targetting
+{
+	width: 200px;
+	height: 400px;
+	border: 1px #EEE solid;
+}
+	
+.below_targetting
+{
+	width: 200px;
+	height: 400px;
+	border: 1px #EEE solid;
+	margin: 4px 0 0 0;
+}
+	
+
+/**************    Footer    **************/
+
+
+.footer {
+	text-align: center;
+}
+
+.notify_d
+{
+	border: 2px red solid;
+	margin: 12px 2px 2px 2px;
+	padding: 5px;
+	text-align: left;
+}
+

@@ -1,0 +1,556 @@
+<!-- 
+  Copyright (c) 2008 Google Inc.
+  
+  You are free to copy and use this sample.
+  License can be found here: http://code.google.com/apis/ajaxsearch/faq/#license
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>Site Restricted Search - Google AJAX Search API Sample</title>
+    <!-- <link href="../../css/gsearch_green.css" type="text/css" rel="stylesheet"/> -->
+    <style type="text/css">
+
+    body {
+      background-color: white;
+      color: black;
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      margin: 15px;
+    }
+
+    /*
+     * Highlight -siteSearch in results area
+     */
+
+    /* bold the section header */
+    .gsc-resultsRoot-siteSearch .gsc-title {
+      font-weight : bold;
+    }
+
+    .gsc-resultsRoot-siteSearch .gsc-keeper {
+      background-image : url('../../css/orange_check.gif');
+      font-weight : bold;
+    }
+
+
+    </style>
+    <!-- Replace with  -->
+    <script src="http://www.google.com/jsapi?key=ABQIAAAAmu4fvhDLB74GSgJ8PAJDMhRczWgZXMmFboovjxxxpdWWntGnoBQj7pAqGo1C29LGz3Y3FW8zcuXeYg" type="text/javascript"></script>
+    <script type="text/javascript">
+    //<![CDATA[
+    google.load('search', '1');
+    
+    function OnLoad() {
+      // Dynamically load CSS to override defaults
+      var css = document.createElement('link');
+      css.href = '../../css/gsearch_green.css';
+      css.type = 'text/css';
+      css.rel = 'stylesheet';
+      document.getElementsByTagName('head')[0].appendChild(css);
+      
+      // Create a search control
+      var searchControl = new google.search.SearchControl();
+
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("USAA");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("http://www.usaa.com");
+      searchControl.addSearcher(siteSearch);
+
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("BofA");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("http://www.bofa.com");
+      searchControl.addSearcher(siteSearch);
+
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("Paypal");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("https://www.paypal.com/");
+      searchControl.addSearcher(siteSearch);
+
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("Amazon  Login");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("https://affiliate-program.amazon.com/");
+      searchControl.addSearcher(siteSearch);
+
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("Merchant Acct. Login");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("https://ebc.cybersource.com/ebc/login/Login.do;jse...");
+      searchControl.addSearcher(siteSearch);
+
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("Business Credit Card");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("http://www.capitalone.com/");
+      searchControl.addSearcher(siteSearch);
+
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("LinkShare");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("https://cli.linksynergy.com/cli/common/login.php?b...");
+      searchControl.addSearcher(siteSearch);
+
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("eBay Login");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("https://www.ebaypartnernetwork.com/files/hub/en-US...");
+      searchControl.addSearcher(siteSearch);
+
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("Amazon  Login");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("https://affiliate-program.amazon.com/");
+      searchControl.addSearcher(siteSearch);
+
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("Zazzle.com Login");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("https://www.zazzle.com/lgn/login");
+      searchControl.addSearcher(siteSearch);
+
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("Commission Junction");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("https://members.cj.com/member/foundation/login.jsp");
+      searchControl.addSearcher(siteSearch);
+
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("ABCSearch");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("https://admin.abcsearch.com/af/affiliate.pl");
+      searchControl.addSearcher(siteSearch);
+
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("Findology Admin");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("http://www.findology.com/adv/login.php");
+      searchControl.addSearcher(siteSearch);
+
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("Miva Admin");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("https://adcenter.us.miva.com/login.aspx");
+      searchControl.addSearcher(siteSearch);
+
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("Kanoodle Admin");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("https://ads.kanoodle.com/login.html");
+      searchControl.addSearcher(siteSearch);
+
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("GBA Admin");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("http://www.greenbackad.com/admin");
+      searchControl.addSearcher(siteSearch);
+
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("PageUI");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("http://www.pageui.com/index2.php");
+      searchControl.addSearcher(siteSearch);
+
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("Google Anaylitics");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("https://www.google.com/analytics/settings/home");
+      searchControl.addSearcher(siteSearch);
+
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("GBA.com");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("http://www.greenbackad.com");
+      searchControl.addSearcher(siteSearch);
+
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("MyOnlyPage Tracking");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("http://www.myonlypage.com/referers.php");
+      searchControl.addSearcher(siteSearch);
+
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("1800 Login");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("https://service.ringcentral.com/login/enter.asp?s=...");
+      searchControl.addSearcher(siteSearch);
+
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("Google Adwords");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("https://adwords.google.com/select/snapshot");
+      searchControl.addSearcher(siteSearch);
+
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("Microsoft adCenter");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("https://adcenter.microsoft.com/?mkt=en-us");
+      searchControl.addSearcher(siteSearch);
+
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("Yahoo Marketing");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("https://marketingsolutions.login.yahoo.com/adui/si...");
+      searchControl.addSearcher(siteSearch);
+
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("Hotmail");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("http://www.hotmail.com");
+      searchControl.addSearcher(siteSearch);
+
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("Gmail");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("http://www.gmail.com");
+      searchControl.addSearcher(siteSearch);
+
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("AOL");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("http://www.aol.com");
+      searchControl.addSearcher(siteSearch);
+
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("LinkedIn");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("http://www.linkedin.com");
+      searchControl.addSearcher(siteSearch);
+
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("Myspace");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("http://www.myspace.com");
+      searchControl.addSearcher(siteSearch);
+
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("Facebook");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("http://www.facebook.com");
+      searchControl.addSearcher(siteSearch);
+
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("Costco Amex");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("https://home.americanexpress.com/home/mt\_personal...");
+      searchControl.addSearcher(siteSearch);
+
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("ABCSearch");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("http://www.abcsearch.com/");
+      searchControl.addSearcher(siteSearch);
+
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("LunaParking");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("http://lunaparking.com");
+      searchControl.addSearcher(siteSearch);
+
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("Findology");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("http://www.findology.com");
+      searchControl.addSearcher(siteSearch);
+
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("SearchFeed");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("http://www.searchfeed.com");
+      searchControl.addSearcher(siteSearch);
+
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("LookCode");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("http://lookcode.com/index.php");
+      searchControl.addSearcher(siteSearch);
+
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("Metricstats.com");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("http://metricstats.com/");
+      searchControl.addSearcher(siteSearch);
+
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("Fastpartner.net");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("http://fastpartner.net/");
+      searchControl.addSearcher(siteSearch);
+
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("Corezen Search");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("http://myshovel.com/");
+      searchControl.addSearcher(siteSearch);
+
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("JustforClickz");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("http://justforclickz.com/");
+      searchControl.addSearcher(siteSearch);
+
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("cojojo.com");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("http://www.cojojo.com/");
+      searchControl.addSearcher(siteSearch);
+
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("Primosearch");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("http://www.primosearch.com/");
+      searchControl.addSearcher(siteSearch);
+
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("cpxrevenue");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("http://cpxrevenue.com/");
+      searchControl.addSearcher(siteSearch);
+
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("ZEDO");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("http://www.zedo.com/");
+      searchControl.addSearcher(siteSearch);
+
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("values7 - PPC!");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("http://values7.com/");
+      searchControl.addSearcher(siteSearch);
+
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("Timeline and PageUI data");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("http://only1page.com/theplan/index.php?title=Main\...");
+      searchControl.addSearcher(siteSearch);
+
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("Wiki");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("http://only1page.com/theplan/index.php?title=Main\...");
+      searchControl.addSearcher(siteSearch);
+
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("Comscore");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("http://www.comscore.com");
+      searchControl.addSearcher(siteSearch);
+
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("Alexa");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("http://www.alexa.com");
+      searchControl.addSearcher(siteSearch);
+
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("Info.com - Search the Web");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("http://www.info.com/");
+      searchControl.addSearcher(siteSearch);
+
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("Inc.com");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("http://www.inc.com");
+      searchControl.addSearcher(siteSearch);
+
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("Ripe Digital");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("http://www.ripedigital.com");
+      searchControl.addSearcher(siteSearch);
+
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("reMOD");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("http://sfremod.com");
+      searchControl.addSearcher(siteSearch);
+
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("Boat Website");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("http://www.boatingmag.com/default.asp?section\_id=...");
+      searchControl.addSearcher(siteSearch);
+
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("Funny Videos");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("http://www.planetvids.com/?affiliate=index0001-nos...");
+      searchControl.addSearcher(siteSearch);
+
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("Expedia");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("www.expedia.com");
+      searchControl.addSearcher(siteSearch);
+
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("Travelocity");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("http:www.travelocity.com");
+      searchControl.addSearcher(siteSearch);
+
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("Craigslist");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("http://phoenix.craigslist.org/");
+      searchControl.addSearcher(siteSearch);
+
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("GoDaddy");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("http://www.godaddy.com");
+      searchControl.addSearcher(siteSearch);
+
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("Whois");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("www.whois.net");
+      searchControl.addSearcher(siteSearch);
+
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("Moon Valley Nursery");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("http://www.moonvalleynursery.com/");
+      searchControl.addSearcher(siteSearch);
+
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("Nissan 350Z Forum Online Community - Hom");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("http://www.350zmotoring.com/modules/Jig/index.php?...");
+      searchControl.addSearcher(siteSearch);
+
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("Barack Obama and Joe Biden: The Change W");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("http://www.barackobama.com/index.php");
+      searchControl.addSearcher(siteSearch);
+
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("Cardinals");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("http://www.azcardinals.com/index2.php");
+      searchControl.addSearcher(siteSearch);
+
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("ESPN");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("http://espn.go.com/");
+      searchControl.addSearcher(siteSearch);
+
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("Dolphins");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("http://keralatravel.files.wordpress.com/2008/05/do...");
+      searchControl.addSearcher(siteSearch);
+
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("Supernerd.org");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("http://supernerd.org/");
+      searchControl.addSearcher(siteSearch);
+
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("Search Point 3");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("http://searchpoint3.com/");
+      searchControl.addSearcher(siteSearch);
+
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("finalsearch");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("http://finalsearch.net/");
+      searchControl.addSearcher(siteSearch);
+
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("Dig Bone Search results:");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("http://digbone.com/");
+      searchControl.addSearcher(siteSearch);
+
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("- 2007-SEARCH.COM Search");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("http://2007-search.com/");
+      searchControl.addSearcher(siteSearch);
+
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("xpdeveloper");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("http://www.xpdeveloper.com/");
+      searchControl.addSearcher(siteSearch);
+
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("Favour Links");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("http://www.favourlinks.net/");
+      searchControl.addSearcher(siteSearch);
+
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("Powered by techSearch");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("http://www.techsearch.biz/");
+      searchControl.addSearcher(siteSearch);
+
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("Your PageUI Links");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("http://www.pageui.com/config/account.php");
+      searchControl.addSearcher(siteSearch);
+
+
+
+/*
+      // site restricted web search with custom label
+      // and class suffix
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("Amazon.com");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("amazon.com");
+      searchControl.addSearcher(siteSearch);
+
+      // site restricted web search with custom label
+      // and class suffix
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("Digg.com");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("digg.com");
+      searchControl.addSearcher(siteSearch);
+
+      // site restricted web search with custom label
+      // and class suffix
+      var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("Tartan online");
+      siteSearch.setUserDefinedClassSuffix("siteSearch");
+      siteSearch.setSiteRestriction("http://www.tartanonline.com/tartanonline/tartan_a_c.html");
+      searchControl.addSearcher(siteSearch);
+*/
+
+
+
+      // Establish a keep callback
+      searchControl.setOnKeepCallback(null, DummyClipSearchResult);
+
+      // tell the searcher to draw itself and tell it where to attach
+      searchControl.draw(document.getElementById("searchcontrol"));
+
+      // execute an inital search
+      searchControl.execute("carnegie");
+    }
+
+    function DummyClipSearchResult(result) {}
+
+    google.setOnLoadCallback(OnLoad, true);
+    //]]>
+    </script>
+  </head>
+  <body>
+    <div id="searchcontrol"/>
+  </body>
+</html>

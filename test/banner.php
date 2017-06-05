@@ -1,0 +1,1 @@
+<div class="banner">	<div class="above_targetting">above-the-fold the placement</div>	<div class="below_targetting">below-the-fold the placement</div></div>

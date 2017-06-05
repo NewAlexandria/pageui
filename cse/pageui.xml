@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<GoogleCustomizations>
+  <CustomSearchEngine>
+  <Title>CSE for PageUI User 8</Title>
+  <Description>All links.</Description>
+       <Context>
+           <BackgroundLabels>
+             <Label name="8" mode="FILTER" />
+          </BackgroundLabels>
+        </Context>
+  </CustomSearchEngine>
+
+  <!-- Annotations label the sites to be used in the Search Engine -->
+  <Annotations>
+    <Annotation about="http://www.worldwaterforum5.org/">
+      <Label name="73" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://www.google.org/inform.html">
+      <Label name="73" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://www.azcommerce.com/BusAsst/Technology/assessment+grants.htm">
+      <Label name="73" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://www.techstars.org/apply/">
+      <Label name="73" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://www.dailymail.co.uk/news/worldnews/article-1117264/Beam-Scientists-left-baffled-mysterious-columns-coloured-light-appear-night-skies.html">
+      <Label name="73" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://www.aeonjournal.com/articles/road_to_saturn/road_to_saturn.html">
+      <Label name="73" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://blackmesatrust.org/?">
+      <Label name="73" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://127.0.0.1/~equinox/pageui/link\_dropper\_flat.php">
+      <Label name="73" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://www.enterprisemission.com/Von_Braun.htm">
+      <Label name="73" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://www.unsw.edu.au/news/pad/articles/2003/mar/Banner\_award.html">
+      <Label name="73" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://127.0.0.1/~equinox/pageui/link\_dropper\_flat.php">
+      <Label name="73" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://www.azangels.org/">
+      <Label name="73" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://gizmodo.com/383843/casio-exilim-ex+f1-slow+mo-super-cam-full-review-verdict-totally-unique-shockingly-powerful">
+      <Label name="73" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://ipinfo.info/netrenderer/">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://hsivonen.iki.fi/doctype/">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://www.webappers.com/2008/06/27/how-to-get-cross-browser-compatibility-every-time/">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://www.flownet.com/ron/css-rant.html">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="https://login.ezproxy1.lib.asu.edu/login?url=http://www.oed.com/entrance.dtl">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://www.nature.com.ezproxy1.lib.asu.edu/nature/archive/index.html">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://www.sciencemag.org.ezproxy1.lib.asu.edu/">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://devthought.com/textboxlist-meets-autocompletion/">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://www.jsunit.net/">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://www.livevalidation.com/download">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://jquery.thewikies.com/sifr/">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://www.elated.com/articles/javascript-timers-with-settimeout-and-setinterval/">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://www.w3schools.com/ajax/ajax\_examples.asp">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://ajaxpatterns.org/Unique_URLs">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://www.smashingmagazine.com/2009/01/20/50-extremely-useful-php-tools/">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://docs.jquery.com/Ajax">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://grid.orch8.net/help/api\_calls.html#categor">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://recaptcha.net/resources.html">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://dev.jquery.com/view/tags/ui/latest/demos/functional/#ui.effects.showhide">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://www.json.org/js.html">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://www.apple.com/quicktime/tutorials/embed.html">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://www.only1page.com/theplan/index.php?title=Unit_Testing">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://www.only1page.com/theplan/index.php?title=Developer_Skills">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://code.google.com/apis/ajaxsearch/documentation/">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://www.google.com/uds/samples/apidocs/raw-searchers.html">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://code.google.com/apis/ajaxsearch/documentation/reference.html#_class_GwebSearch">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://www.apple.com/quicktime/tutorials/embed2.html">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://sprott.physics.wisc.edu/pickover/pc/realitycarnival.html">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://gigaom.com/2008/07/01/10-reasons-enterprises-arent-ready-to-trust-the-cloud/">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://derivativedribble.wordpress.com/">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="www.digg.com">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://bigthink.com/">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://www.penny-arcade.com/">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://www.hulu.com/the-daily-show-with-jon-stewart">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://www.sinfest.net/">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://www.menagea3.net/">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://xkcd.com/">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="Http://www.rusticsagehaven.com/yoga.html">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://www.paulfriedlander.com/">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://www.thomaskramer.com/connect.php#">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://www.sacred-destinations.com/greece/meteora-holy-trinity-monastery.htm">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://www.visionbrewing.com/sake/index.html">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://stlocarina.com/choose-your-ocarina-advanced.html">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://www.kris-keris.com/">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://www.aldaily.com/">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://chronicle.com/temp/reprint.php?id=zs61txc4kwr4kd1q1rjbfxt41952gdmf">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://www.yerkaland.com/giclee.php?act=0">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://www.themadseason.com/">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://www.weretheshit.com/573.html">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://www.entheogen.com/index.php">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://www.shamanhut.com/">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://www.growerstradepost.com/servlet/StoreFront">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://www.botanicmagic.com/">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://www.mycopath.com/index.php?main\_page=down\_for\_maintenance">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://www.lilshopofspores.com/cgi/display.cgi?item\_num=5105">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://www.shamanic-extracts.com/xcart/customer/">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://www.mushroomvideos.com/BRF-Pf-Tek">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://www.iamshaman.com/">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://www.addthis.com/">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://code.google.com/p/diggtoolbar/source/checkout">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://www.likno.com/examples/internetexplorer.html">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://www.codeproject.com/KB/shell/ietoolbartutorial.aspx">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://www.borngeek.com/firefox/toolbar-tutorial/">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://blogs.msdn.com/ie/archive/2005/09/16/469686.aspx">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://www.microsoft.com/windows/ie/ie6/using/howto/customizing/custombrowser.mspx">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://www.chat11.com/Internet\_Explorer\_Toolbar\_Programming">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://www.google.com/tools/firefox/toolbar/FT3/intl/en/">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://www.captain.at/howto-firefox-toolbar-tutorial.php">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://www.toolbarbrowser.com/manual/tutorial11.htm">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://www.linkberry.com/homepage/Linkberry/11685/Phoenix/AZ">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://www.linkshelf.com">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://www.foxmarks.com/">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://www.watchtower.org/bible/toc.htm">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://www.businessweek.com/the_thread/techbeat/archives/2008/03/apples_design_p.html?rss">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://cosmiccutlery.com/knives.html">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://insciences.org/article.php?article_id=1421">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://virtualglobetrotting.com/map/8497/view/?service=0">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://www.lovemarks.com/index.php?pageID=20020">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://www.likno.com/examples/internetexplorer.html">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://www.speeddatephoenix.com/content-5.htm">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="digg.com">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://www.mint.com/">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://en.wikipedia.org/wiki/Mereology">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://www.elkadot.com/magneticity/Van de Graaff device absurdities.htm">
+      <Label name="74" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://www.eharmony.com/singles/servlet/user/mymatches">
+      <Label name="95" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="https://secure.rightstuffdating.com/mem/index.cfm?DSP=BIO_CREATEALIST">
+      <Label name="95" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://www.plentyoffish.com/advancedsearch.aspx">
+      <Label name="95" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://www.arizonacostumeinstitute.com/ACI/2nd Wednesday.html">
+      <Label name="95" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://www.phxart.org/events/lectures.aspx">
+      <Label name="95" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="https://www.wireless.att.com/olam/dashboardAction.olamexecute">
+      <Label name="95" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="https://chaseonline.chase.com/MyAccounts.aspx">
+      <Label name="95" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="https://www.dl.ed.gov/borrower/AccountSummary.do?cmd=initializeContext">
+      <Label name="95" />
+      <Label name="8" />
+    </Annotation>
+    <Annotation about="http://www.thunderbolts.info/tpod/2007/arch07/070625brandbergmassif.htm">
+      <Label name="98" />
+      <Label name="8" />
+    </Annotation>
+  </Annotations>
+
+</GoogleCustomizations>
